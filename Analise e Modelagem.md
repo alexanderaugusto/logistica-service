@@ -29,7 +29,7 @@
 ## Modelagem
 
   <figure>
-    <img src="./images/trabalho1-caso-de-uso.drawio (1).svg" alt="Trulli" style="width:100%">
+    <img src="./images/caso-de-uso.drawio.svg" alt="Trulli" style="width:100%">
     <figcaption align = "center">
       <b>Figura 1: Caso de uso do serviço de logística</b>
     </figcaption>
@@ -45,28 +45,28 @@
   <figure>
     <img src="./images/modelo-detalhado-parte1.drawio.svg" alt="Trulli" style="width:100%">
     <figcaption align = "center">
-      <b>Figura 3: Modelo de processo de negócio do serviço de logística</b>
+      <b>Figura 3: Modelo detalhado do serviço de logística - Listagem de pedidos</b>
     </figcaption>
   </figure>
 
   <figure>
     <img src="./images/modelo-detalhado-parte2.drawio.svg" alt="Trulli" style="width:100%">
     <figcaption align = "center">
-      <b>Figura 4: Modelo de processo de negócio do serviço de logística</b>
+      <b>Figura 4: Modelo detalhado do serviço de logística - Entrega</b>
     </figcaption>
   </figure>
 
   <figure>
     <img src="./images/marcacao-modelo-detalhado-parte1.drawio.svg" alt="Trulli" style="width:100%">
     <figcaption align = "center">
-      <b>Figura 5: Modelo de processo de negócio do serviço de logística</b>
+      <b>Figura 5: Marcação dos serviços - Listagem de pedidos</b>
     </figcaption>
   </figure>
 
   <figure>
     <img src="./images/marcacao-modelo-detalhado-parte2.drawio.svg" alt="Trulli" style="width:100%">
     <figcaption align = "center">
-      <b>Figura 6: Modelo de processo de negócio do serviço de logística</b>
+      <b>Figura 6: Marcação dos serviços - Entrega</b>
     </figcaption>
   </figure>
 
