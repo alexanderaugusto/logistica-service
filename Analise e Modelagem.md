@@ -1,22 +1,28 @@
-## Análise
+# Análise
 
-  * **Requisitos:**
+## Requisitos:
 
-    - Consultar a lista de pedidos a serem entregues;
-    - Registrar a entrega de um pedido;
-    - Enviar um e-mail para o cliente quando o pedido for entregue.
+  * Consultar a lista de pedidos a serem entregues;
+  * Registrar a entrega de um pedido;
+  * Enviar um e-mail para o cliente quando o pedido for entregue.
 
-  * **Fronteiras da análise:**
+## Fronteiras da análise:
 
-    - O entregador consulta a lista de pedidos a serem entregues;
-    - O entregador registra a entrega de um pedido;
-    - O sistema acessa o servidor de e-mails.
+  * O entregador consulta a lista de pedidos a serem entregues;
+  * O entregador registra a entrega de um pedido;
+  * O sistema acessa o servidor de e-mails.
 
-  * **Partes envolvidas:** Entregador e cliente.
+## Partes envolvidas:
 
-  * **Partes afetadas da corporação:** Vendas e logística.
+  * Entregador;
+  * Cliente.
 
-## Modelagem
+## Partes afetadas da corporação:
+
+  * Vendas;
+  * Logística.
+
+# Modelagem
 
   <p align = "center">
     <img src="./images/caso-de-uso.drawio.svg" alt="Trulli" style="width:100%">
