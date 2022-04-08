@@ -93,7 +93,7 @@
   </p>
 
 
-  ## Relação entre os serviços
+  # Relação entre os serviços
 
   <p align = "center">
     <img src="./images/relacao-entre-servicos-refinada.drawio.svg" alt="Trulli" style="width:100%">
@@ -102,7 +102,7 @@
     </em>
   </p>
 
-  ## Projeto
+  # Projeto
 
   <p align = "center">
     <img src="./images/relacao-entre-servicos.drawio.svg" alt="Trulli" style="width:100%">
