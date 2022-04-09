@@ -189,7 +189,7 @@
   ## Diagrama de classes com os serviços detalhados:
 
   E uma versão mais detalhada dos serviços é mostrada na Figura 9, já mais próxima da implementação.
-  
+
   <p align = "center">
     <img src="./images/diagrama-de-classes.drawio.svg" alt="Trulli" style="width:100%">
     <em>
