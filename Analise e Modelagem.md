@@ -111,7 +111,7 @@
 
   ## Aplicar os princípios de orientação a serviços:
 
-  Utilizar dos princípios para otimizar os relação de serviços:
+  Utilizar dos princípios para otimizar as relação de serviços:
 
   * Pedido:
     * Listar pedidos.
@@ -121,14 +121,14 @@
   * Mensageiro:
     * Notifica cliente via e-mail.
 
-  _Obs_: Pegar hora e data atual pode ser implementado no momento do registro da entrega. Não é necessário a criação de um serviço para gerar esse dado sendo que já que existe funções da própria linguagem para pegar essas informações.
+  _Obs_: Pegar hora e data atual pode ser implementado no momento do registro da entrega. Não é necessário a criação de um serviço para gerar esse dado sendo que já existe funções da própria linguagem para pegar essas informações.
 
   ## Identificar a composição de serviços:
 
   Após analisar a regra de negócio observa-se a necessidade de criar o **serviço de entrega de pedido**. Este serviço fará a orquestração de duas ações importantes:
 
   * Iniciar o processo de entrega: faz todo o processo de registro de pendência do entrega.
-  * Confirma e entrega do pedido: faz o processo de confirmação da entrega e envio de email notificando cliente.
+  * Confirma a entrega do pedido: faz o processo de confirmação da entrega e envio de email notificando cliente.
 
   ## Revisar os agrupamentos de serviços:
 
