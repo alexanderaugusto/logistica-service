@@ -102,6 +102,7 @@
   * Entrega:
     * Pegar hora e data atual.
     * Registrar entrega;
+    * Registrar tentativa.
   * Mensageiro:
     * Notifica cliente via e-mail.
   * CRM:
@@ -115,7 +116,7 @@
   * Pedido:
     * Listar pedidos.
   * Entrega:
-    * Registrar pendência;
+    * Registrar tentativa de entrega;
     * Registrar entrega (já envolve identificar o entregador e pedido como também validar o pedido);
   * Mensageiro:
     * Notifica cliente via e-mail.
@@ -157,6 +158,27 @@
 
   # Projeto
 
+  Nessa fase será feito as especificações do serviço.
+
+  ## Composição da arquitetura:
+  Neste trabalho será utilizada as três camadas: 
+  - Task;
+  - Entity;
+  - Utility.
+
+  Implementação: Serão utilizados para a linguagem Java em conjunto Spring Boot.
+
+  ## Definir os serviços de entidades:
+  Após estudos dos diagramas e das regras do negócio para esse trabalho será criado a seguinte entidade: **Pedido**.
+
+  ## Definir os serviços de utilidade:
+  O serviço reaproveitável em várias partes do sistema: **Mensageiro**.
+
+  ## Definir os serviços de tarefa:
+  O serviço de tarefa: **Entrega**.
+
+  ## Relacionamento entre os serviços:
+
   <p align = "center">
     <img src="./images/relacao-entre-servicos.drawio.svg" alt="Trulli" style="width:100%">
     <em>
@@ -164,12 +186,13 @@
     </em>
   </p>
 
+  ## Diagrama de classes com os serviços detalhados:
+
+  E uma versão mais detalhada dos serviços é mostrada na Figura 9, já mais próxima da implementação.
+  
   <p align = "center">
     <img src="./images/diagrama-de-classes.drawio.svg" alt="Trulli" style="width:100%">
     <em>
       <b>Figura 9: Diagrama de classes com os serviços detalhados.</b>
     </em>
   </p>
-
-
-
