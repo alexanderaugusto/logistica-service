@@ -72,7 +72,7 @@
 
   ## Definição dos serviços:
 
-  Os diagramas a seguir indicam os tipos de serviços presentes no modelo, seguindo as seguines definições:
+  Os diagramas a seguir indicam os tipos de serviços presentes no modelo, seguindo as seguintes definições:
 
   * Manual: Ação feita manualmente por parte do entregador ou cliente;
   * Orquestração: Validação de dados realizada pelo sistema;
@@ -92,6 +92,60 @@
     </em>
   </p>
 
+  ## Criação de serviços candidatos:
+
+  A partir da marcação feita, as atividades do processo de negócio são separadas para a identificação dos serviços candidatos. Para isso usaremos os serviços que não foram marcados, os marcados de legado e orquestração. Finalmente faz-se o agrupamento lógico deles:
+
+  * Pedido:
+    * Listar pedidos;
+    * Validar pedido.
+  * Entrega:
+    * Pegar hora e data atual.
+    * Registrar entrega;
+  * Mensageiro:
+    * Notifica cliente via e-mail.
+  * CRM:
+    * Identificar entregador;
+    * Identificar pedido.
+
+ 
+  ## Aplicar os princípios de orientação a serviços:
+  
+  Utilizar dos princípios para otimizar os relação de serviços:
+
+  * Pedido:
+    * Listar pedidos.
+  * Entrega:
+    * Registrar pendência;
+    * Registrar entrega (já envolve identificar o entregador e pedido como também validar o pedido);
+  * Mensageiro:
+    * Notifica cliente via e-mail.
+
+  _Obs_: Pegar hora e data atual pode ser implementado no momento do registro da entrega. Não é necessário a criação de um serviço para gerar esse dado sendo que já que existe funções da própria linguagem para pegar essas informações.
+
+  ## Identificar a composição de serviços:
+  
+  Após analisar a regra de negócio observa-se a necessidade de criar o **serviço de entrega de pedido**. Este serviço fará a orquestração de duas ações importantes:
+
+  * Iniciar o processo de entrega: faz todo o processo de registro de pendência do entrega.
+  * Confirma e entrega do pedido: faz o processo de confirmação da entrega e envio de email notificando cliente.
+
+  ## Revisar os agrupamentos de serviços:
+
+  Um novo serviço do grupo Pedido pode ser criado, chamado de **atualizar pedido** (engloba: registrar pendência de entrega e confirmação da entrega).
+
+  Com o novo serviço é valido uma reanálise no processo de **entrega de pedido**. Isso ocorre porque o registro da entrega utilizaria do serviço de atualizar pedido para confirmar a entrega daquele pedido.
+
+  Com as conclusões finais podemos considerar os seguintes serviços:
+
+  * Pedido:
+    * Listar pedidos;
+    * Atualizar pedidos.
+  * Entrega:
+    * Iniciar entrega;
+    * Confirmar entrega.
+  * Mensageiro:
+    * Notifica cliente via e-mail.
 
   # Relação entre os serviços
 
