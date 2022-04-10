@@ -1,23 +1,31 @@
+# Sumário
+
+  <ol>
+    <li><a href="#análise">Análise</a></li>
+    <li><a href="#modelagem">Modelagem</a></li>
+    <li><a href="#projeto">Projeto</a></li>
+  </ol>
+
 # Análise
 
-## Requisitos:
+  ## Requisitos:
 
   * Consultar a lista de pedidos a serem entregues;
   * Registrar a entrega de um pedido;
   * Enviar um e-mail para o cliente quando o pedido for entregue.
 
-## Fronteiras da análise:
+  ## Fronteiras da análise:
 
   * O entregador consulta a lista de pedidos a serem entregues;
   * O entregador registra a entrega de um pedido;
   * O sistema acessa o servidor de e-mails.
 
-## Partes envolvidas:
+  ## Partes envolvidas:
 
   * Entregador;
   * Cliente.
 
-## Partes afetadas da corporação:
+  ## Partes afetadas da corporação:
 
   * Vendas;
   * Logística.
@@ -31,7 +39,7 @@
   Este diagrama demonstra de forma simplificada o principal objetivo do sistema de logística, no qual tem como principal utilidade o despache de pedidos por parte do entregador.
 
   <p align = "center">
-    <img src="./images/caso-de-uso.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/caso-de-uso.drawio.svg" alt="Caso de Uso - UML" style="width:100%">
     <em>
       <b>Figura 1: Caso de uso do serviço de logística.</b>
     </em>
@@ -42,7 +50,7 @@
   Este diagrama demonstra todo processo do sistema de logística, desde a parte em que o entregador consulta os pedidos pendentes para entrega, até o momento em que o pedido é entregue ao cliente. Após a entrega, o sistema registra a entrega e envia um email ao cliente com as informações da entrega.
 
   <p align = "center">
-    <img src="./images/modelo-de-processo-de-negocio.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/modelo-de-processo-de-negocio.drawio.svg" alt="Modelo de processo de negócio" style="width:100%">
     <em>
       <b>Figura 2: Modelo de processo de negócio do serviço de logística.</b>
     </em>
@@ -53,7 +61,7 @@
   Este diagrama detalha a parte de listagem de pedidos por parte do entregador. Nele conseguimos observar todos os passos necessários para que o entregador consiga consultar os pedidos pendentes para entrega. De forma resumida, o entregar entra com os dados no sistema, é feita a validação desses dados e então todos os pedidos são listados.
 
   <p align = "center">
-    <img src="./images/modelo-detalhado-parte1.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/modelo-detalhado-parte1.drawio.svg" alt="Modelo detalhado - Listagem de pedidos" style="width:100%">
     <em>
       <b>Figura 3: Modelo detalhado do serviço de logística - Listagem de pedidos.</b>
     </em>
@@ -64,7 +72,7 @@
   Este diagrama detalha a parte de entrega do pedido por parte do entregador. Como pode ser observado, após o pedido ser entregue ao cliente, o entregador acessa o sistema, entra com o código do pedido e registra a entrega do pedido. Assim que a entrega é registrada, um email é enviado ao cliente automaticamente com as informações da entrega.
 
   <p align = "center">
-    <img src="./images/modelo-detalhado-parte2.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/modelo-detalhado-parte2.drawio.svg" alt="Modelo detalhado - Entrega" style="width:100%">
     <em>
       <b>Figura 4: Modelo detalhado do serviço de logística - Entrega.</b>
     </em>
@@ -79,14 +87,14 @@
   * Legado: Sistema externo que será utilizado pelo sistema de logística.
 
   <p align = "center">
-    <img src="./images/marcacao-modelo-detalhado-parte1.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/marcacao-modelo-detalhado-parte1.drawio.svg" alt="Marcação - Modelo detalhado - Listagem de pedidos" style="width:100%">
     <em>
       <b>Figura 5: Marcação dos serviços - Listagem de pedidos.</b>
     </em>
   </p>
 
   <p align = "center">
-    <img src="./images/marcacao-modelo-detalhado-parte2.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/marcacao-modelo-detalhado-parte2.drawio.svg" alt="Marcação - Modelo detalhado - Entrega" style="width:100%">
     <em>
       <b>Figura 6: Marcação dos serviços - Entrega.</b>
     </em>
@@ -147,21 +155,21 @@
   * Mensageiro:
     * Notifica cliente via e-mail.
 
-  # Relação entre os serviços
+  ## Relação entre os serviços
 
   <p align = "center">
-    <img src="./images/relacao-entre-servicos-refinada.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/relacao-entre-servicos-refinada.drawio.svg" alt="Relação entre os serviços refinada" style="width:100%">
     <em>
       <b>Figura 7: Relação de serviços refinada.</b>
     </em>
   </p>
 
-  # Projeto
+# Projeto
 
   Nessa fase será feito as especificações do serviço.
 
   ## Composição da arquitetura:
-  Neste trabalho será utilizada as três camadas: 
+  Neste trabalho será utilizada as três camadas:
   - Task;
   - Entity;
   - Utility.
@@ -180,7 +188,7 @@
   ## Relacionamento entre os serviços:
 
   <p align = "center">
-    <img src="./images/relacao-entre-servicos.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/relacao-entre-servicos.drawio.svg" alt="Relação entre os serviços" style="width:100%">
     <em>
       <b>Figura 8: Relacionamento entre os serviços.</b>
     </em>
@@ -191,7 +199,7 @@
   E uma versão mais detalhada dos serviços é mostrada na Figura 9, já mais próxima da implementação.
 
   <p align = "center">
-    <img src="./images/diagrama-de-classes.drawio.svg" alt="Trulli" style="width:100%">
+    <img src="./images/diagrama-de-classes.drawio.svg" alt="Diagrama de classes" style="width:100%">
     <em>
       <b>Figura 9: Diagrama de classes com os serviços detalhados.</b>
     </em>
